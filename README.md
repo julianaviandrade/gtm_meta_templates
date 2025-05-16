@@ -2,11 +2,12 @@
 
 ---
 
-### Introdução
-#### Do que se trata este projeto?
+## Introdução
+
+### Do que se trata este projeto?
 Este projeto oferece templates em JavaScript para ajudar na implementação e cadastro dos eventos do Meta Pixel utilizando o Google Tag Manager (GTM). Com esse projeto, será possível configurar esses eventos dentro do GTM, sem necessidade de mexer diretamente no código do seu site, tornando a gestão das tags mais simples, organizada e flexível.
 
-#### Qual tecnologia é usada neste projeto?
+### Qual tecnologia é usada neste projeto?
 O Google Tag Manager é uma ferramenta que facilita a inserção e gerenciamento de scripts (tags) no seu site. Os templates são códigos JavaScript que você pode utilizar dentro das Tags personalizadas do GTM para enviar os eventos corretamente ao Meta Ads.
 
 ### Como funciona os templates no Google Tag Manager?
