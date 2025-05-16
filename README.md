@@ -2,6 +2,26 @@
 
 ---
 
+### Introdução
+#### Do que se trata este projeto?
+Este projeto oferece templates em JavaScript para ajudar na implementação e cadastro dos eventos do Meta Pixel utilizando o Google Tag Manager (GTM). Com esse projeto, será possível configurar esses eventos dentro do GTM, sem necessidade de mexer diretamente no código do seu site, tornando a gestão das tags mais simples, organizada e flexível.
+
+#### Qual tecnologia é usada neste projeto?
+O Google Tag Manager é uma ferramenta que facilita a inserção e gerenciamento de scripts (tags) no seu site. Os templates são códigos JavaScript que você pode utilizar dentro das Tags personalizadas do GTM para enviar os eventos corretamente ao Meta Ads.
+
+### Como funciona os templates no Google Tag Manager?
+1) Instalação do Meta Pixel via GTM:
+- Você cria uma Tag personalizada no GTM, onde cola o código base do Meta Pixel, que inclui a função >fbq<.
+- Essa tag é configurada para ser disparada em todas as páginas, garantindo que o Pixel esteja ativo e pronto para enviar informações.
+
+2) Cadastro de eventos (padrão ou personalizados):
+- Para cada evento que deseja rastrear, você cria uma nova Tag do tipo HTML personalizado dentro do GTM contendo o código JavaScript que chama a função fbq('track', ...) para eventos padrão, ou fbq('trackCustom', ...) para eventos personalizados.
+- Você configura os gatilhos no GTM que determinam quando esta tag será disparada — por exemplo, em condições específicas como clique em botão, visualização de página específica ou submissão de formulário.
+
+3) Execução e envio dos eventos:
+- Quando o gatilho associado à tag é acionado, o GTM executa o código JavaScript da tag, chamando a função fbq correspondente.
+- A função fbq envia os dados do evento para o Meta Ads em segundo plano, permitindo que você meça e analise essas ações dentro da plataforma do Meta.
+
 ## Eventos Padrão
 
 Os eventos padrão são categorias já reconhecidas pelo Meta para facilitar o rastreamento e otimização. E possuem essa configuração:
