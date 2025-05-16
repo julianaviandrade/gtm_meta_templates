@@ -28,8 +28,10 @@ fbq('track', 'Purchase', {
   content_ids: ['produto_123'],
   content_type: 'product'
 });
+````
 
 ---
+
 
 ## Eventos Personalizados
 
@@ -37,7 +39,7 @@ Para rastrear ações específicas que não fazem parte dos eventos padrão, use
 
 ```javascript
 fbq('trackCustom', 'NomeDoEvento', {param1: 'valor1', param2: 123});
-
+```
 ---
 
 ## Boas Práticas
